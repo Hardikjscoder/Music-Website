@@ -1,0 +1,293 @@
+/* Header */
+.navBar {
+    background: var(--white);
+    position: sticky;
+    top: 0;
+}
+
+.logo-title {
+    font-family: "Poppins", sans-serif;
+    color: var(--theme4);
+    font-weight: bold;
+}
+
+.navLinks {
+    gap: 1em;
+}
+
+.navLinks a {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.navLinks li {
+    transition: transform 500ms ease;
+}
+
+.navLinks li:hover {
+    transform: translateY(-5px);
+}
+
+.burger  {
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    display: none;
+}
+
+.burger #menuIcon {
+    font-size: 2.75rem;
+}
+
+/* Hero */
+
+#hero-section {
+    display: grid;
+    place-content: center;
+    height: 85vh;
+    background: url(/imgs/dj.jpg);
+    background-color: rgba(60, 0, 255, .9);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.hero-container h1 {
+    font-family: "Smooch";
+    padding: 0;
+}
+
+.hero-container #play {
+    background: white;
+    color: var(--theme4);
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero-container #play::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 4rem;
+    left: -12px;
+    top: -8px;
+}
+
+/* Second Section */
+.djImg img {
+    width: 80%;
+}
+
+
+.dj-div-content .span {
+    opacity: .3;
+    font-family: "Smooch";
+    font-size: 5rem;
+}
+
+/* Third Section */
+#third-section {
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(45deg, rgba(60, 0, 255, 0.5), rgba(36, 0, 144, .5), rgba(40, 40, 40, .7)), url(/imgs/musicbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+}
+
+#third-section p {
+    font-size: 4rem;
+    font-family: "Poppins";
+}
+
+/* Fourth Section */
+#fourth-section {
+    background: url(/imgs/musicbg.jpg);    
+    background-color: rgba(47, 0, 255, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    display: grid;
+    place-content: center;
+}
+
+
+.about-container i {
+    font-size: 4rem;
+}
+
+
+.about-container h3 {
+    color: var(--white);
+}
+
+/* Fourth Section */
+.blog img {
+    width: 50%;
+    height: auto;
+}
+
+.blog p {
+    width: 60%;
+}
+
+.categories {
+    background-color: rgba(47, 0, 255, 0.1);
+    padding: 1em 5em;
+    height: 40vh;
+    margin: 0 4rem;
+}
+
+.categories-item {
+    font-size: 1.5rem;
+    line-height: 2;
+    border-bottom: 1px solid rgba(47, 0, 255, 0.25);
+}
+
+/* Sixth Section */
+.track i {
+    font-size: 3rem;
+    color: rgb(36, 0, 144);
+    margin: 0.5em 1.75rem;
+}
+
+.track-section img {
+    width: 7rem;
+    margin: 0 1rem;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #f2f2f2;
+    border-radius: 55px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgb(36, 0, 144);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.track-image img {
+    width: 70%;
+    margin: 2rem;
+}
+
+/* Seventh Section */
+#footer {
+    background-color: #f2f2f2;
+}
+
+.footer-content .social i {
+    font-size: 2.5rem;
+}
+
+
+/* Media Queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navBar {
+        height: 255px;
+        transition: 500ms ease-out;
+        flex-direction: column;
+    }
+
+    .navLinks {
+        flex-direction: column;
+    }
+
+    .h-nav {
+        height: 50px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .dj-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .time {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .categories {
+        height: auto;
+        margin: 1em;
+    }
+
+    .blogs-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .blogs-content p {
+        width: auto;
+    }
+
+    .tracks-container {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 45%;
+    }
+    
+    .hero-container h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .djImg img {
+        width: auto;
+    }
+    
+    .dj-container {
+        flex-direction: row;
+    }
+    
+    .track-image img {
+        width: 50%;
+    }
+    
+    .track-audios {
+        margin-left: 8rem;
+    }
+}

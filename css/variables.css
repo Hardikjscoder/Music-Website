@@ -1,0 +1,9 @@
+:root {
+    /* Color Scheme */
+    --theme1: rgb(12, 0, 50);
+    --theme2: rgb(24, 0, 97);
+    --theme3: rgb(36, 0, 144);
+    --theme4: rgb(53, 0, 211);
+    --theme5: rgb(40, 40, 40);
+    --white: #FFF;
+}

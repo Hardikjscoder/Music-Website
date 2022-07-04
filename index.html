@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links for stylesheets -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/variables.css">
+
+    <!-- Link for font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link for font Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Link for font Smooch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+
+    <!-- Link for font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Music Website Template</title>
+</head>
+
+<body>
+
+    <!-- Header/Navbar -->
+    <nav class="navBar h-nav padding flex justify-between align-center">
+        <!-- Logo -->
+        <div class="logo v-class">
+            <span class="logo-title heading_large" style="padding: 0;">DJoz</span>
+        </div>
+        <!-- Links -->
+        <ul class="navLinks v-class flex align-center">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#blogs">Blogs</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/E6I64RPNkio" target="__blank">Videos</a>
+            </li>
+            <li>
+                <a href="#audios">Audios</a>
+            </li>
+            <li>
+                <button class="btn">Sign Up</button>
+            </li>
+        </ul>
+
+        <!-- Burger -->
+        <div class="burger">
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="hero-container text-center">
+            <h1 class="heading_extra_large thin">feel the heart beats</h1>
+            <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dignissimos beatae voluptatibus debitis
+                unde quidem sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum vero nihil ab.
+
+            </p>
+            <a href="https://www.youtube.com/embed/E6I64RPNkio" target="__blank">
+                <i class="fa-solid fa-play my btn" id="play"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Second Section -->
+    <section id="second-section" class="section">
+        <div class="dj-container flex justify-center align-center">
+            <div class="djImg">
+                <img src="https://preview.colorlib.com/theme/djoz/img/about/xabout.png.pagespeed.ic.UQ_7DY9Axc.webp"
+                    alt="DJ Image">
+            </div>
+            <div class="dj-div-content">
+                <h2 class="heading_large">DJ Alexandra Rud</h2>
+                <p class="para">DJ Rainflow knows how to move your mind, body and soul by delivering tracks that stand
+                    out from the norm. As if this
+                    impressive succession of high impact
+                    floor-filling bombs wasn’t enough to sustain.</p>
+                <span class="span">Alexandra</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section - The Countdown Section -->
+    <section id="third-section" class="section">
+        <div class="count-container">
+            <h1 class="heading_subLarge">music festival starts in</h1>
+            <div class="time flex justify-center align-center" style="gap: 2rem;">
+                <p id="days" class="para"></p>
+                <p id="hours" class="para"></p>
+                <p id="minutes" class="para"></p>
+                <p id="seconds" class="para"></p>
+            </div>
+            <button class="btn" style="letter-spacing: 1px;">Buy Tickets</button>
+        </div>
+    </section>
+
+
+    <!-- Fourth Section  -->
+    <h2 class="heading_large text-center" id="about">about us</h2>
+    <section id="fourth-section" class="section text-center">
+        <div class="about-container flex justify-center align-center">
+            <div class="about-item">
+                <i class="fa-solid fa-music"></i>
+                <h3 class="heading_large">DJ Lessons</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="about-item">
+                <i class="fa-regular fa-heart"></i>
+                <h3 class="heading_large">Wedding</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="about-item">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                <h3 class="heading_large">Clubs and Bar</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth Section -->
+    <h2 class="heading_large text-center" id="blogs">
+        Blogs
+    </h2>
+    <section id="fifth-section">
+        <div class="blogs-container">
+            <div class="blogs-content flex justify-center">
+                <div class="blogs">
+                    <div class="blog" style="margin: 0 3rem;">
+                        <img src="/imgs/mic.jpg" alt="mic image">
+                        <h2 class="heading_medium" style="padding: 1em 0 0 0;">David Guetta Miami Ultra Music Festival
+                            2019
+                        </h2>
+                        <p class="para" style="padding: 0.5em 0 2em 0;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit.
+                            Ducimus
+                            laboriosam, distinctio
+                            provident sapiente alias debitis.</p>
+                    </div>
+                    <div class="blog" style="margin: 0 3rem;">
+                        <img src="/imgs/blogimg.jpg" alt="concert image">
+                        <h2 class="heading_medium" style="padding: 1em 0 0 0;">Martin Garrix (Full live-set) |
+                            SLAM!Koningsdag
+                        </h2>
+                        <p class="para" style="padding: 0.5em 0 2em 0;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit.
+                            Ducimus
+                            laboriosam, distinctio
+                            provident sapiente alias debitis.</p>
+                    </div>
+                    <div class="blog" style="margin: 0 3rem;">
+                        <img src="/imgs/blogimg2.jpg" alt="concert image">
+                        <h2 class="heading_medium" style="padding: 1em 0 0 0;">Dimitri Vegas, Steve Aoki & Like Mike’s
+                            “3 Are Legend”
+                        </h2>
+                        <p class="para" style="padding: 0.5em 0 2em 0;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit.
+                            Ducimus
+                            laboriosam, distinctio
+                            provident sapiente alias debitis.</p>
+                    </div>
+                </div>
+                <div class="categories">
+                    <h2 class="heading_medium">Category</h2>
+                    <li class="categories-item">Food</li>
+                    <li class="categories-item">Travel News</li>
+                    <li class="categories-item">Modern Music</li>
+                    <li class="categories-item">Products</li>
+                    <li class="categories-item">Tracks</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sixth Section -->
+    <div class="track-section flex align-center justify-center">
+        <h2 class="heading_large" id="audios">Tracks</h2>
+        <img src="/imgs/music.gif" alt="sound gif" class="gif">
+    </div>
+    <section id="sixth-section">
+        <div class="tracks-container flex justify-center align-center">
+            <div class="track-audios">
+                <div class="track">
+                    <h2 class="heading_medium" style="padding: 0 1em;">DAVID GUETTA ULTRA</h2>
+                    <div class="song flex align-center">
+                        <i class="fa-solid fa-circle-play" id="playTrack1"></i>
+                        <input type="range" name="range" id="rangeBar1" style="width: 25rem;" value="0" min="0"
+                            max="100" />
+                    </div>
+                </div>
+                <div class="track">
+                    <h2 class="heading_medium" style="padding: 0 1em;">ELECTRIC MALONE MUSIC</h2>
+                    <div class="song flex align-center">
+                        <i class="fa-solid fa-circle-play" id="playTrack2"></i>
+                        <input type="range" name="range" id="rangeBar2" style="width: 25rem;" value="0" min="0"
+                            max="100" />
+                    </div>
+                </div>
+                <div class="track">
+                    <h2 class="heading_medium" style="padding: 0 1em;">ROCK JUSTIN BIEBER MUSIC</h2>
+                    <div class="song flex align-center">
+                        <i class="fa-solid fa-circle-play" id="playTrack3"></i>
+                        <input type="range" name="range" id="rangeBar3" style="width: 25rem;" value="0" min="0"
+                            max="100" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="track-image flex justify-center align-center">
+                <img src="/imgs/trackbgimg.jpg" alt="image track">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seventh Section -->
+    <footer id="footer">
+        <div class="footer-content flex justify-between align-center padding">
+            <div class="copy">
+                <h2 class="heading_large">Copyrights &copy; || 2022</h2>
+            </div>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook" style="color: #4267B2;"></i>
+                <i class="fa-brands fa-twitter" style="color: #00acee ;"></i>
+                <i class="fa-brands fa-whatsapp" style="color: #075e54;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

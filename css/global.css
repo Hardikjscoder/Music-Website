@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+button, i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+li {
+    list-style: none;
+}
+
+h1,h2,h3 {
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+h2,h3 {
+    color: rgba(55, 61, 81, 1);
+}
+
+::selection {
+    background: var(--theme5);
+    color: var(--white);
+}
